@@ -5,9 +5,10 @@ export default function Footer() {
     <footer className={styles.footer}>
       <p>
         Ownership of "Aquila - Social Media control room" vests with Trine
-        Engineering Private Limited. Use is permitted strictly under license.
+        Engineering Private Limited (TEPL). Use is permitted strictly under
+        license.
       </p>
-      <span>Designed and developed by Himanshu Sharma</span>
+      <span>Designed and developed by TEPL Development team</span>
     </footer>
   );
 }

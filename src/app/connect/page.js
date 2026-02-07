@@ -27,7 +27,7 @@ export default function ConnectPage() {
         <div className={styles.brand}>
           <img
             className={styles.brandLogo}
-            src="/eagle.webp"
+            src="/eagle.jpg"
             alt="Aquila logo"
           />
           <div>
@@ -54,7 +54,9 @@ export default function ConnectPage() {
           <Link className={styles.navItem} href="/settings">
             Settings
           </Link>
-          <button className={styles.navItem}>Inbox</button>
+          <Link className={styles.navItem} href="/inbox">
+            Inbox
+          </Link>
           <Link className={`${styles.navItem} ${styles.navActive}`} href="/connect">
             Connect
           </Link>

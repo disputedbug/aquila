@@ -25,8 +25,8 @@
 }
 
 .brandLogo {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.2);
@@ -124,7 +124,7 @@
   content: "";
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 14px;
   background: #10b981;
 }
 
@@ -378,7 +378,7 @@
 .donut {
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 14px;
   background: conic-gradient(
     #f97316 0deg 120deg,
     #38bdf8 120deg 220deg,
@@ -392,7 +392,7 @@
   content: "";
   position: absolute;
   inset: 24px;
-  border-radius: 50%;
+  border-radius: 14px;
   background: #f8fafc;
 }
 

@@ -26,7 +26,7 @@ export default function SettingsPage() {
         <div className={styles.brand}>
           <img
             className={styles.brandLogo}
-            src="/eagle.webp"
+            src="/eagle.jpg"
             alt="Aquila logo"
           />
           <div>
@@ -53,7 +53,9 @@ export default function SettingsPage() {
           <Link className={`${styles.navItem} ${styles.navActive}`} href="/settings">
             Settings
           </Link>
-          <button className={styles.navItem}>Inbox</button>
+          <Link className={styles.navItem} href="/inbox">
+            Inbox
+          </Link>
           <Link className={styles.navItem} href="/connect">
             Connect
           </Link>
@@ -92,7 +94,7 @@ export default function SettingsPage() {
             <div className={styles.field}>
               <label>
                 Default timezone
-                <select>
+                <select defaultValue="Asia/Kolkata">
                   {timezones.map((zone) => (
                     <option key={zone}>{zone}</option>
                   ))}

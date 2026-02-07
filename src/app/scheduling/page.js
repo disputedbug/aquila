@@ -59,7 +59,7 @@ export default function SchedulingPage() {
         <div className={styles.brand}>
           <img
             className={styles.brandLogo}
-            src="/eagle.webp"
+            src="/eagle.jpg"
             alt="Aquila logo"
           />
           <div>
@@ -86,7 +86,9 @@ export default function SchedulingPage() {
           <Link className={styles.navItem} href="/settings">
             Settings
           </Link>
-          <button className={styles.navItem}>Inbox</button>
+          <Link className={styles.navItem} href="/inbox">
+            Inbox
+          </Link>
           <Link className={styles.navItem} href="/connect">
             Connect
           </Link>
