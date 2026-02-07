@@ -58,6 +58,7 @@
   font-size: 15px;
   color: #1e293b;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .navItem:hover {
@@ -160,30 +161,7 @@
   gap: 16px;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-}
-
-.search input {
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 220px;
-}
-
-.searchIcon {
-  color: #64748b;
-}
-
 .primaryButton,
-.primaryButtonSmall,
-.secondaryButton,
 .ghostButton {
   border: none;
   border-radius: 14px;
@@ -199,112 +177,24 @@
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.18);
 }
 
-.primaryButtonSmall {
-  background: #111827;
-  color: #f8fafc;
-  padding: 8px 14px;
-  font-size: 13px;
-}
-
-.secondaryButton {
-  background: #f97316;
-  color: #1f2937;
-}
-
 .ghostButton {
   background: rgba(255, 255, 255, 0.65);
   color: #0f172a;
 }
 
 .primaryButton:hover,
-.secondaryButton:hover,
 .ghostButton:hover,
-.sidebarButton:hover,
-.primaryButtonSmall:hover {
+.sidebarButton:hover {
   transform: translateY(-1px);
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 24px;
-  padding: 24px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
-}
-
-.heroCopy h2 {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-
-.heroCopy h2 span {
-  color: #f97316;
-}
-
-.heroCopy p {
-  color: #475569;
-  margin-bottom: 18px;
-}
-
-.heroActions {
-  display: flex;
-  gap: 12px;
-}
-
-.heroPanel {
-  display: grid;
-  gap: 16px;
-  padding: 18px;
-  border-radius: 22px;
-  background: linear-gradient(170deg, #111827, #0f172a);
-  color: #f8fafc;
-}
-
-.heroMetric h3 {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.heroMetric span {
-  color: #94a3b8;
-  font-size: 13px;
-}
-
-.heroChart {
-  display: grid;
-  gap: 10px;
-  padding: 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.heroChart svg {
-  width: 100%;
-  height: 120px;
-}
-
-.heroLegend {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #cbd5f5;
-}
-
-.legendValue {
-  color: #38bdf8;
-}
-
-.statGrid {
+.kpiGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
-.statCard {
+.kpiCard {
   padding: 18px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.9);
@@ -313,24 +203,22 @@
   gap: 6px;
 }
 
-.statCard h3 {
+.kpiCard h3 {
   font-size: 26px;
 }
 
-.statCard span {
+.kpiCard span {
   color: #64748b;
   font-size: 13px;
 }
 
-.analyticsGrid,
-.scheduleGrid {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
-.analyticsCard,
-.scheduleCard {
+.panel {
   padding: 22px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.92);
@@ -345,154 +233,61 @@
   align-items: center;
 }
 
-.barChart {
+.table {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  align-items: end;
-  height: 180px;
+  gap: 12px;
 }
 
-.barItem {
+.tableRow {
   display: grid;
-  justify-items: center;
-  gap: 8px;
-  color: #475569;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #f8fafc;
+  align-items: center;
+}
+
+.tableRow p {
+  color: #64748b;
   font-size: 13px;
 }
 
-.bar {
-  width: 42px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #38bdf8, #f97316);
-  box-shadow: inset 0 6px 12px rgba(255, 255, 255, 0.3);
-}
-
-.donutWrap {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 18px;
-  align-items: center;
-}
-
-.donut {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f97316 0deg 120deg,
-    #38bdf8 120deg 220deg,
-    #22c55e 220deg 290deg,
-    #a855f7 290deg 360deg
-  );
-  position: relative;
-}
-
-.donut::after {
-  content: "";
-  position: absolute;
-  inset: 24px;
-  border-radius: 50%;
-  background: #f8fafc;
-}
-
-.donutLegend {
-  display: grid;
-  gap: 10px;
-}
-
-.legendRow {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 8px;
-  align-items: center;
-  font-size: 14px;
-  color: #475569;
-}
-
-.legendRow strong {
+.tableId {
+  font-weight: 600;
   color: #0f172a;
 }
 
-.legendRow em {
-  font-style: normal;
-  color: #10b981;
-  font-size: 12px;
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  color: #475569;
 }
 
-.scheduleList {
+.channelList {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
-.scheduleRow {
-  display: grid;
-  grid-template-columns: 60px 1fr auto;
-  gap: 16px;
+.channelRow {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 12px 14px;
-  border-radius: 16px;
+  border-radius: 14px;
   background: #f8fafc;
 }
 
-.scheduleTime {
-  font-weight: 600;
-  color: #0f172a;
-}
-
-.scheduleRow span {
+.channelRow p {
   color: #64748b;
   font-size: 13px;
 }
 
-.scheduleStatus {
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(14, 165, 233, 0.12);
-  color: #0369a1;
-  font-size: 12px;
+.channelGrowth {
   font-weight: 600;
-}
-
-.campaigns {
-  display: grid;
-  gap: 16px;
-}
-
-.campaignRow {
-  display: grid;
-  grid-template-columns: 1fr 140px auto;
-  gap: 14px;
-  align-items: center;
-}
-
-.campaignMeta h4 {
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-
-.campaignMeta p {
-  color: #64748b;
-  font-size: 13px;
-}
-
-.campaignProgress {
-  width: 100%;
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.campaignProgress span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(90deg, #f97316, #38bdf8);
-}
-
-.campaignRow strong {
-  font-size: 13px;
-  color: #0f172a;
+  color: #16a34a;
 }
 
 
@@ -515,35 +310,21 @@
 }
 
 @media (max-width: 960px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .statGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .analyticsGrid,
-  .scheduleGrid {
-    grid-template-columns: 1fr;
-  }
-
   .topbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .topbarActions {
-    width: 100%;
-    flex-wrap: wrap;
+  .kpiGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .search {
-    width: 100%;
+  .grid {
+    grid-template-columns: 1fr;
   }
 
-  .search input {
-    width: 100%;
+  .tableRow {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -556,21 +337,7 @@
     padding: 18px;
   }
 
-  .statGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .donutWrap {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .scheduleRow {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-
-  .campaignRow {
+  .kpiGrid {
     grid-template-columns: 1fr;
   }
 }
