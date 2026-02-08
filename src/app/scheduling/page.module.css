@@ -49,6 +49,13 @@
   gap: 10px;
 }
 
+.navDivider {
+  height: 1px;
+  width: 100%;
+  background: rgba(148, 163, 184, 0.3);
+  margin: 4px 0;
+}
+
 .navItem {
   border: none;
   background: transparent;

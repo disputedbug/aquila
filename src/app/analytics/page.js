@@ -77,6 +77,7 @@ export default function AnalyticsPage() {
           <Link className={`${styles.navItem} ${styles.navActive}`} href="/analytics">
             Analytics
           </Link>
+          <div className={styles.navDivider} />
           <Link className={styles.navItem} href="/content">
             Content
           </Link>
@@ -86,11 +87,13 @@ export default function AnalyticsPage() {
           <Link className={styles.navItem} href="/review">
             Review
           </Link>
-          <Link className={styles.navItem} href="/settings">
-            Settings
-          </Link>
+          <div className={styles.navDivider} />
           <Link className={styles.navItem} href="/inbox">
             Inbox
+          </Link>
+          <div className={styles.navDivider} />
+          <Link className={styles.navItem} href="/settings">
+            Settings
           </Link>
           <Link className={styles.navItem} href="/connect">
             Connect
