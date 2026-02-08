@@ -8,7 +8,7 @@ export default function Footer() {
         Engineering Private Limited (TEPL). Use is permitted strictly under
         license.
       </p>
-      <span>Designed and developed by TEPL Development team</span>
+      <span>Designed and developed by TEPL Development team.</span>
     </footer>
   );
 }
